@@ -4,7 +4,7 @@
 # 基础2: list
 '''
 注意3种括号区别：
-{} : 定义对象
+{} : 定义字典
 [] : 定义数组
 () : 定义元组. 元组初始化后不能修改，不能赋值给其他变量
 '''
@@ -19,6 +19,10 @@ print(classmate[-1]) #-1表示倒数第一个，同理，-2表示倒数第二个
 classmate.append('Adam')
 #添加到指定
 classmate.insert(1, 'Jack')
+
+#排序
+print(classmate.sort())
+
 #删除list末尾
 classmate.pop()
 #删除指定位置
