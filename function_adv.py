@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from collections import Iterable
+from collections import Iterable, Iterator
 #1. 切片操作
 L = ['Michael', 'Sarah', 'Tracy', 'Bob', 'Jack']
 print(L[0: 3])  #从0开始，取3个['Michael', 'Sarah', 'Tracy']
@@ -109,3 +109,10 @@ while True:
     except StopIteration as e:
         print('generator return value: ', e.value)
         break;
+
+#5 迭代器 
+# 可以被next()函数调用并不断返回下一个值的对象称为迭代器：Iterator
+# 使用isinstance()判断一个对象是否是Iterator对象
+# 生成器都是Iterator对象，但list、dict、str虽然是Iterable，却不是Iterator。
+
+print(isinstance((x for x in range(10)), Iterator))
