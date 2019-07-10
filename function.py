@@ -135,3 +135,12 @@ f1(1, 2, 3, *args)
 f1(1, 2, 3, *args, args =('a', 'b'))
 f1(1, 2, 3, args =('a', 'b'), x=99)
 f1(1, 2, 3, args =('a', 'b'), kw = {'x':99})
+
+
+#递归
+def fact(n):
+    if n==1:
+        return 1
+    return n * fact(n-1)
+    
+print(fact(10));
