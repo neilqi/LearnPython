@@ -7,4 +7,6 @@
 * basic_3 条件，循环，break，continue，流程控制
 * basic_4 字典
 * function 定义函数。难点在于默认参数、可变参数、关键字参数的组合使用
-* function_adv 切片操作, 迭代for in，列表生成式，生成器 generator
+* function_adv 切片操作, 迭代for in，列表生成式，生成器 generator, 迭代器
+* function_hign 高阶函数，map/reduce，filter, sorted
+* function_return 返回函数，匿名函数lamda，装饰器，偏函数

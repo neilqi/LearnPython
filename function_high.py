@@ -66,3 +66,18 @@ print(list(filter(is_odd, list(range(100)))))
 # 过滤掉空串 ''表示false
 def not_empty(s):
     return s and s.strip()
+
+#4 排序 sorted(list, key) key接收一个函数，表达排序规则
+print(sorted([36, 5, -12, -21], key=abs))   
+#输出: [5, 9, -12, -21, 36]
+
+#默认情况下，对字符串排序是按ascii码比较的
+print(sorted(['bob', 'about', 'Zoo', 'Credit']))
+#输出: ['Credit', 'Zoo', 'about', 'bob'], Z < a
+
+# 如果要忽略大小写，应加上key
+print(sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower))
+#输出： ['about', 'bob', 'Credit', 'Zoo']
+
+#反向排序，传入第三个参数 reverse=True
+print(sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True))
