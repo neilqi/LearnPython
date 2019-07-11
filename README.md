@@ -10,3 +10,5 @@
 * function_adv 切片操作, 迭代for in，列表生成式，生成器 generator, 迭代器
 * function_hign 高阶函数，map/reduce，filter, sorted
 * function_return 返回函数，匿名函数lamda，装饰器，偏函数
+* package.py 引用和定义包
+* package3.py 管理第三方包
