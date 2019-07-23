@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+'''
+Models for user, blog, comment.
+'''
+
+__author__ = 'Michael Liao'
+
 import time, uuid
 
 from orm import Model, StringField, BooleanField, FloatField, TextField
@@ -11,9 +17,9 @@ def next_id():
 class User(Model):
     __table__ = 'users'
 
-    id = StringField(primary_key=True, default=next_id(), ddl='varchar(50)')
+    id = StringField(primary_key=True, default=next_id, ddl='varchar(50)')
     email = StringField(ddl='varchar(50)')
-    password = StringField(ddl='varchar(50)')
+    passwd = StringField(ddl='varchar(50)')
     admin = BooleanField()
     name = StringField(ddl='varchar(50)')
     image = StringField(ddl='varchar(500)')
